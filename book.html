@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot My Glam - Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Spot My Glam</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="salons.html">Salons</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#why-choose">Why Choose Us?</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="booking-form-section">
+            <div class="container">
+                <h2>Book Your Appointment</h2>
+                <div class="booking-card">
+                    <h3 id="salon-name-display">Salon Name Here</h3>
+                    <p class="salon-detail"><strong>Location:</strong> <span id="salon-location-display"></span></p>
+                    <p class="salon-detail"><strong>Service:</strong> <span id="selected-service-display"></span></p>
+
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="service">Select Service:</label>
+                            <select id="service" name="service" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="Haircut">Haircut</option>
+                                <option value="Hair Coloring">Hair Coloring</option>
+                                <option value="Manicure">Manicure</option>
+                                <option value="Pedicure">Pedicure</option>
+                                <option value="Facial">Facial</option>
+                                <option value="Massage">Massage</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Select Date:</label>
+                            <input type="date" id="date" name="date" required min="2025-06-12"> </div>
+
+                        <div class="form-group">
+                            <label for="time">Select Time Slot:</label>
+                            <div id="time-slots" class="time-slots-grid">
+                                </div>
+                            <input type="hidden" id="selected-time" name="time" required>
+                            <p class="select-time-hint">Click on an available time slot above.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                        </div>
+
+                        <button type="submit" class="btn">Confirm Booking</button>
+                    </form>
+                    <div id="booking-confirmation" class="confirmation-message" style="display:none;">
+                        <h3>Thank You! Your Appointment is Confirmed (Simulated)</h3>
+                        <p>We've received your booking request for:</p>
+                        <p><strong>Salon:</strong> <span id="conf-salon-name"></span></p>
+                        <p><strong>Service:</strong> <span id="conf-service"></span></p>
+                        <p><strong>Date:</strong> <span id="conf-date"></span></p>
+                        <p><strong>Time:</strong> <span id="conf-time"></span></p>
+                        <p>You'll receive a (simulated) confirmation email shortly.</p>
+                        <a href="salons.html" class="btn btn-secondary">Book Another Appointment</a>
+                        <a href="index.html" class="btn">Go to Homepage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spot My Glam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

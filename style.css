@@ -1,0 +1,444 @@
+/* Basic Reset & Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 20px 0;
+}
+
+/* Header & Navigation */
+header {
+    background: #fff;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    color: #FF69B4; /* Pink for glam */
+}
+
+header nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header ul li a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #FF69B4;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1500x500?text=Spot+My+Glam+Background') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #FF69B4; /* Pink */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e65a9e; /* Darker pink */
+}
+
+.btn-secondary {
+    background: #5cb85c; /* Example secondary color, adjust as needed */
+}
+
+.btn-secondary:hover {
+    background: #4cae4c;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.alt-bg {
+    background: #fdfdff; /* Slightly different background for alternating sections */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* About Us & Why Choose Us Sections */
+#about p, #why-choose ul {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+#why-choose ul {
+    list-style: none;
+    text-align: left;
+}
+
+#why-choose ul li {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+#why-choose ul li:hover {
+    transform: translateY(-5px);
+}
+
+#why-choose ul li strong {
+    color: #FF69B4;
+}
+
+/* Our Services Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.service-item h3 {
+    color: #FF69B4;
+    margin-bottom: 15px;
+}
+
+/* Featured Salon Section */
+#featured-salon .featured-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#featured-salon h3 {
+    font-size: 2.2rem;
+    color: #FF69B4;
+    margin-bottom: 15px;
+}
+
+#featured-salon p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Salon Listings Page - Salon Grid */
+#salon-listings {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.salon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.salon-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.salon-card:hover {
+    transform: translateY(-10px);
+}
+
+.salon-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.salon-card h3 {
+    color: #FF69B4;
+    margin: 15px 15px 10px 15px;
+}
+
+.salon-card p {
+    margin: 0 15px 10px 15px;
+    font-size: 0.95rem;
+}
+
+.salon-card .btn {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 15px;
+    text-align: center;
+}
+
+/* Booking Form Section */
+#booking-form-section {
+    padding: 60px 0;
+}
+
+.booking-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.booking-card h3 {
+    color: #FF69B4;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.salon-detail {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input[type="date"] {
+    cursor: pointer;
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time-slot-btn {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+.time-slot-btn:hover {
+    background: #e9e9e9;
+    border-color: #ccc;
+}
+
+.time-slot-btn.selected {
+    background: #FF69B4;
+    color: #fff;
+    border-color: #FF69B4;
+    font-weight: bold;
+}
+
+.time-slot-btn.unavailable {
+    background: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    border: 1px solid #f5c6cb;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.time-slot-btn.unavailable:hover {
+    background: #f8d7da; /* No hover effect for unavailable */
+    border-color: #f5c6cb;
+}
+
+.select-time-hint {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Confirmation Message */
+.confirmation-message {
+    background: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    border: 1px solid #c3e6cb;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.confirmation-message h3 {
+    color: #155724;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.confirmation-message p {
+    margin-bottom: 10px;
+}
+
+.confirmation-message .btn {
+    margin: 15px 10px 0 10px;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button at the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FF69B4; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 20px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 1.5rem; /* Increase font size */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#backToTopBtn:hover {
+    background-color: #e65a9e; /* Darker background on hover */
+    transform: translateY(-3px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 8px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-grid, .salon-grid, .time-slots-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    #backToTopBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 16px;
+        font-size: 1.2rem;
+    }
+
+    .booking-card {
+        padding: 25px;
+    }
+}
